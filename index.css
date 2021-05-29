@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+ }
+
+
+ .menu-bar{
+     height : 50px;
+     width : 100%;
+     background : black;
+ }
+  
+ nav ul{
+     float: right;
+     margin-right: 30%;
+ }
+
+ nav li{
+     display : inline-block;
+     margin: 0 24px;
+     line-height: 45px;
+ }
+
+ nav a{
+     color: white;
+     font-size: 20px;
+     text-decoration: none;
+ }
+
+ nav #icon {
+     color: white;
+     font-size :30px;
+     line-height: 45px;
+     float: right;
+     margin-right:40px;
+     cursor: pointer;
+     display: none;
+ }
+ 
+
+ .home-section{
+    width:100vw;
+    height : 85vh;
+    margin-top: 20px;
+    background-image: url('./assets/Home Images.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.home-main-section h3{
+    line-height : 50px;
+    display : inline;
+}
+
+.home-main-section h3{
+    line-height : 50px;
+    display : inline;
+}
+
+
+.home-main-section button {
+    margin-top: 7%;
+    display : block;
+    padding : 15px 20px;
+    background-color : #F2CD85;
+    color : white;
+    border:0px;
+}
+
+
+.home-main-section{
+    margin-left: 9%;
+    margin-top: 16%;
+    float: left;
+}
+
+/* for Tablet */
+
+@media (max-width: 900px){
+
+    nav ul{
+        float: right;
+        margin-right: 20%;
+    }
+   
+    nav li{
+        display : inline-block;
+        margin: 0 7px;
+        line-height: 45px;
+    }
+
+ }
+
+
+
+
+
+
+/* for mobile */
+
+@media (max-width: 600px) {
+
+    nav #icon{
+        display : block;
+    }
+
+    nav ul{
+        position:fixed;
+        width: 100%;
+        height: 100%;
+        background : black;
+        top : 50px;
+        left :  -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    nav li{
+        display : block;
+        margin: 50px 0 ;
+        line-height : 30px;
+    }
+
+    nav a{
+        font-size: 24px;
+    }
+
+    nav ul.show{
+        left : 0;
+    }
+
+
+    .home-section{
+        margin-top: 20px;
+        background-image: url('./assets/Home Images.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+        background-attachment: fixed;
+   }
+   
+   .home-main-section h1{
+       /* line-height : 5px; */
+       display : inline;
+   }
+   
+   .home-main-section h3{
+       /* line-height : 50px; */
+       display: block;
+   }
+   
+   
+   .home-main-section button {
+       margin-top: 7%;
+       display : block;
+       padding : 15px 20px;
+       background-color : #F2CD85;
+       color : white;
+       border:0px;
+   }
+   
+   
+   .home-main-section{
+       margin-left: 9%;
+       margin-top: 13%;
+       float: center;
+       background-color: hsla(0, 100%, 99% ,0.5);
+   }
+
+ }
